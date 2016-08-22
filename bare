@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+source ${1};
+
+# SSH username
+user="$2"
+
+# filled from the hosts file
+HOSTS=()
+
+# read ip from hosts file
+while read line
+do
+  HOSTS+=($line)
+done < "${3:-/dev/stdin}"
+
+# ssh into hosts using the supplied user@host
+# executing the code in check() on the machines
+for i in ${HOSTS[@]}; do
+  echo ${i}
+  ssh ${user}@${i} "$(typeset -f bare_func); bare_func"
+done
