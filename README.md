@@ -1,5 +1,5 @@
 # bare
-BARE: A minimal ansible-like way to run BAsh commands on REmote machines over SSH.
+A minimal ansible-like way to run BAsh commands on REmote machines over SSH.
 
 
 # Usage
@@ -18,9 +18,9 @@ cat hosts.txt | ./bare script sshUsername
 
 # Example:
 ```
-    ./bare ls.sh hosts.txt klafi
+./bare ls.sh hosts.txt klafi
 ```
-`ls.sh` is in example directory in this repo.
+`ls.sh` and `hosts.txt` are in the [example](https://github.com/lafikl/bare/tree/master/example) directory in this repo.
 
 
 
