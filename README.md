@@ -18,7 +18,7 @@ cat hosts.txt | ./bare script sshUsername
 
 # Example:
 ```
-./bare ls.sh hosts.txt klafi
+./bare ls.sh klafi hosts.txt
 ```
 `ls.sh` and `hosts.txt` are in the [example](https://github.com/lafikl/bare/tree/master/example) directory in this repo.
 
